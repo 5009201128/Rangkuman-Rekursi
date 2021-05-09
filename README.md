@@ -15,9 +15,9 @@ contoh :
     using namespace std;
     
     //fungsi rekursif terbatas
-    int pangkatIterasi(){
-        int hasil = 0;
-        for (int i = 1; i < b, i++){
+    int pangkatIterasi(int a, int b){
+        int hasil = a;
+        for (int i = 1; i < b; i++){
              hasil = hasil * a;
         }
         return hasil;
@@ -28,7 +28,7 @@ contoh :
         int b;
         cout << "masukkan angka: ";
         cin >> a;
-        cout >> "masukkan pangkat: "
+        cout << "masukkan pangkat: ";
         cin >> b;
         cout << "hasil iterasi = " << pangkatIterasi(a,b) << endl;
         
@@ -65,14 +65,14 @@ Coba cek source code nya ya
     using namespace std;
     
     //fungsi rekursif terbatas
-    int pangkatIterasi(){
-        int hasil = 0;
-        for (int i = 1; i < b, i++){
+    int pangkatIterasi(int a, int b){
+        int hasil = a;
+        for (int i = 1; i < b; i++){
              hasil = hasil * a;
         }
         return hasil;
     }
-    int pangkatRekursif(){
+    int pangkatRekursif(int a, int b){
         return a * pangkatRekursif(a, (b - 1));
     }
     
@@ -81,7 +81,7 @@ Coba cek source code nya ya
         int b;
         cout << "masukkan angka: ";
         cin >> a;
-        cout >> "masukkan pangkat: "
+        cout << "masukkan pangkat: ";
         cin >> b;
         cout << "hasil iterasi = " << pangkatIterasi(a,b) << endl;
         cout << "hasil rekursif = " << pangkatRekursif(a,b) << endl;
@@ -104,14 +104,14 @@ Langsung aja ini source code yang seharusnya benar.
     using namespace std;
     
     //fungsi rekursif terbatas
-    int pangkatIterasi(){
-        int hasil = 0;
-        for (int i = 1; i < b, i++){
+    int pangkatIterasi(int a, int b){
+        int hasil = a;
+        for (int i = 1; i < b; i++){
              hasil = hasil * a;
         }
         return hasil;
     }
-    int pangkatRekursif(){
+    int pangkatRekursif(int a, int b){
         if (b <= 1){
             cout << "akhir dari rekursif: " << endl;
             return a;
@@ -127,7 +127,7 @@ Langsung aja ini source code yang seharusnya benar.
         int b;
         cout << "masukkan angka: ";
         cin >> a;
-        cout >> "masukkan pangkat: "
+        cout << "masukkan pangkat: ";
         cin >> b;
         cout << "hasil iterasi = " << pangkatIterasi(a,b) << endl;
         cout << "hasil rekursif = " << pangkatRekursif(a,b) << endl;
