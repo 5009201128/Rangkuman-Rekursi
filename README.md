@@ -143,3 +143,56 @@ Langsung aja ini source code yang seharusnya benar.
 1. Membuat program faktorial
 2. Membuat program fibonacci
 
+===================================================Source Code===================================================
+
+Soal nomor 1
+
+        #include <iostream>
+        using namespace std;
+        int faktorial(int n){
+            if (n == 0 || n == 1)
+            {
+                return 1;
+            }
+            else {
+                return n * faktorial(n-1);
+            }
+
+        }
+        int main(){
+            int bil, n;
+            long int hasil;
+            cout << "n = ";
+            cin >> n;
+            hasil = faktorial (n);
+            cout << n << "! = " << hasil;
+            return 0;
+        }
+
+input
+5
+output
+5! = 120
+
+
+Soal nomor 2
+
+        #include <iostream>
+        using namespace std;
+        int fibonacci(int n){
+            if (n == 0 || n == 1){
+                return n;
+            }
+            else {
+                return fibonacci(n-1) + fibonacci(n-2);
+            }
+        }
+        int main(){
+            int bil, n;
+            int hasil;
+            cout << "n = ";
+            cin >> n;
+            hasil = fibonacci(n);
+            cout << "fibonacci(" << n << ") = " << hasil;
+            return 0;
+        }
